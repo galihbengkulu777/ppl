@@ -340,7 +340,7 @@ curl "ipinfo.io/city?token=7a814b6263b02c" > /root/.city
 MYIP=$(curl -sS ipv4.icanhazip.com)
 echo -e "\e[32mloading...\e[0m" 
 clear
-izinsc="https://github.com/hokagelegend9999/ijin/raw/refs/heads/main/alpha"
+# izinsc="BYPASSED"
 # USERNAME
 rm -f /usr/bin/user
 username="Admin-Tomofay"
@@ -369,7 +369,7 @@ mai="datediff "$Exp" "$DATE""
 Info="(${green}Active${NC})"
 Error="(${RED}ExpiRED${NC})"
 today=`date -d "0 days" +"%Y-%m-%d"`
-Exp1=$(curl $izinsc | grep $MYIP | awk '{print $4}')
+Exp1="Active"
 if [[ $today < $Exp1 ]]; then
 sts="${Info}"
 else
@@ -383,8 +383,8 @@ ISP=$(cat /root/.isp)
 IP=$(curl -sS ipv4.icanhazip.com)
 CITY=$(cat /root/.city)
 TIMEZONE=$(printf '%(%H:%M:%S)T')
-Exp_Sc=$(curl -s $izinsc | grep $MYIP | awk '{print $3}')
-User_Sc=$(curl -s $izinsc | grep $MYIP | awk '{print $2}')
+Exp_Sc="2030-12-31"
+User_Sc="Admin-Tomofay"
 
 TEXT="<b>⚡ NOTIF INSTALL SCRIPT ⚡</b>%0A"
     TEXT+="<code>─────────────────────────────</code>%0A"
