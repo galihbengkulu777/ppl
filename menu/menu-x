@@ -279,7 +279,7 @@ menu-x
 12)
 clear
 rm -f /root/update.sh
-wget -q https://raw.githubusercontent.com/hokagelegend9999/alpha.v2/refs/heads/main/update.sh
+wget -q https://raw.githubusercontent.com/tomofay/ppl/main/update.sh
 chmod +x update.sh
 ./update.sh
 ;;

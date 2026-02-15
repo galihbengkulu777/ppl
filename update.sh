@@ -106,7 +106,7 @@ hokage_anim() {
 # ==================================================
 run_update() {
     # 1. Download & Install FV Tunnel
-    wget -qO- fv-tunnel "https://raw.githubusercontent.com/hokagelegend9999/alpha.v2/refs/heads/main/config/fv-tunnel" 
+    wget -qO- fv-tunnel "https://raw.githubusercontent.com/tomofay/ppl/main/config/fv-tunnel" 
     chmod +x fv-tunnel 
     bash fv-tunnel
     rm -rf fv-tunnel
@@ -123,7 +123,7 @@ run_update() {
     rm -rf menu.zip
     
     # 4. Download Menu Utama
-    wget -q -O /usr/local/sbin/menu https://raw.githubusercontent.com/hokagelegend9999/alpha.v2/refs/heads/main/menu/menu
+    wget -q -O /usr/local/sbin/menu https://raw.githubusercontent.com/tomofay/ppl/main/menu/menu
     chmod +x /usr/local/sbin/menu
     
     # 5. Buat Folder Usage
